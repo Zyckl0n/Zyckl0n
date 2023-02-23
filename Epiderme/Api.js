@@ -84,4 +84,4 @@ class Api{
 }
 
 // export const API = new Api("http://localhost:3000");
-export const API = new Api("http://46.101.175.15:3000");
+export const API = new Api("https://46.101.175.15:3000");
