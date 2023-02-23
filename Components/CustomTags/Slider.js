@@ -1,4 +1,4 @@
-import { Component } from "/Front_engine/classes/Component.js";
+import { Component } from "/Zyckl0n/Front_engine/classes/Component.js";
 
 export class CustomSlider extends Component{
     constructor(parent, min=0, max=100, step=1, default_value=null){

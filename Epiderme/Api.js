@@ -1,4 +1,4 @@
-import { NOTIFICATION } from "/Components/Notification/Notification.js";
+import { NOTIFICATION } from "/Zyckl0n/Components/Notification/Notification.js";
 
 class Api{
     constructor(url_api){

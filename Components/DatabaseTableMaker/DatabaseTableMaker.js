@@ -1,7 +1,7 @@
-import { Component } from "/Front_engine/classes/Component.js";
-import { API } from "/Epiderme/Api.js";
-import { REGISTRIES } from "/Epiderme/Registry.js";
-import { NOTIFICATION } from "/Components/Notification/Notification.js";
+import { Component } from "/Zyckl0n/Front_engine/classes/Component.js";
+import { API } from "/Zyckl0n/Epiderme/Api.js";
+import { REGISTRIES } from "/Zyckl0n/Epiderme/Registry.js";
+import { NOTIFICATION } from "/Zyckl0n/Components/Notification/Notification.js";
 
 export class DatabaseTableMaker extends Component{
     constructor(parent, _table_name){

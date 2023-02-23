@@ -1,5 +1,5 @@
-import { Component } from "/Front_engine/classes/Component.js";
-import { DatabaseTableMaker } from "/Components/DatabaseTableMaker/DatabaseTableMaker.js";
+import { Component } from "/Zyckl0n/Front_engine/classes/Component.js";
+import { DatabaseTableMaker } from "/Zyckl0n/Components/DatabaseTableMaker/DatabaseTableMaker.js";
 
 export class FoodEditor extends Component{
     constructor(parent, params={}){

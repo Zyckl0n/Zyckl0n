@@ -1,4 +1,4 @@
-import { Component } from "/Front_engine/classes/Component.js";
+import { Component } from "/Zyckl0n/Front_engine/classes/Component.js";
 import { FoodButtonset } from "./FoodButtonset.js";
 import { ShoppingList } from "./ShoppingList.js";
 import { FoodCalendar } from "./FoodCalendar.js";

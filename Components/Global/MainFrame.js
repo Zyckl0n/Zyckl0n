@@ -1,5 +1,5 @@
-import { Component } from "/Front_engine/classes/Component.js";
-import { NOTIFICATION } from "/Components/Notification/Notification.js";
+import { Component } from "/Zyckl0n/Front_engine/classes/Component.js";
+import { NOTIFICATION } from "/Zyckl0n/Components/Notification/Notification.js";
 import { get_navbar } from "./NavBar.js";
 
 export class MainFrame extends Component{

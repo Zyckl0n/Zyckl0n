@@ -1,4 +1,4 @@
-import { Component } from "/Front_engine/classes/Component.js";
+import { Component } from "/Zyckl0n/Front_engine/classes/Component.js";
 import { PhysicObject, PhysicSquare } from "./PhysicEngine/PhysicObject.js";
 
 export const main_comp_class = class Sandbox extends Component{

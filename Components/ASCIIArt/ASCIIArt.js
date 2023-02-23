@@ -1,4 +1,4 @@
-import { Component } from "/Front_engine/classes/Component.js";
+import { Component } from "/Zyckl0n/Front_engine/classes/Component.js";
 import { API } from "../../Epiderme/Api.js";
 import { CustomSlider } from "../CustomTags/Slider.js";
 

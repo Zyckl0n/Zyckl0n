@@ -1,5 +1,5 @@
-import { Component } from "/Front_engine/classes/Component.js";
-import { API } from "/Epiderme/Api.js"
+import { Component } from "/Zyckl0n/Front_engine/classes/Component.js";
+import { API } from "/Zyckl0n/Epiderme/Api.js"
 
 export class FoodButtonset extends Component{
     constructor(parent, params={}){

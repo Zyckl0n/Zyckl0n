@@ -1,5 +1,5 @@
-import { NOTIFICATION } from "/Components/Notification/Notification.js";
-import { API } from "/Epiderme/Api.js";
+import { NOTIFICATION } from "/Zyckl0n/Components/Notification/Notification.js";
+import { API } from "/Zyckl0n/Epiderme/Api.js";
 
 class Registry{
     constructor(table_name){

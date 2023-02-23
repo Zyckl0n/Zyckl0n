@@ -1,4 +1,4 @@
-import { Component } from "/Front_engine/classes/Component.js";
+import { Component } from "/Zyckl0n/Front_engine/classes/Component.js";
 
 export const main_comp_class = class ProjectManager extends Component{
     constructor(parent, params={}){

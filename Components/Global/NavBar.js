@@ -1,5 +1,5 @@
 import { get_main_frame } from "./MainFrame.js";
-import { Component } from "/Front_engine/classes/Component.js";
+import { Component } from "/Zyckl0n/Front_engine/classes/Component.js";
 
 export class NavBar extends Component{
     constructor(parent, params={}){
