@@ -1,0 +1,48 @@
+.notification_main_frame {
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    right: 20px;
+    width: 300px;
+    height: 100vh;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: flex-end;
+    pointer-events: none;
+}
+
+#notification_frame{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    pointer-events: all;
+}
+
+.notification_cell{
+    width: 100%;
+    min-height: 50px;
+    background: var(--bg_color_2);
+    box-shadow: rgba(0, 255, 0, 0.7) 0px 0px 10px, rgba(0, 0, 0, 0.3) 0px -3px 0px inset, var(--btn_shadow_extruded);
+    padding: 0px 20px;
+    color: azure;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 25px;
+    transition: opacity .2s ease-in-out;
+}
+
+.close_btn{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    transform: scaleX(1.25);
+    font-family: monospace;
+}
+
+.close_btn:hover{
+    cursor: pointer;
+    color: var(--main_color);
+}

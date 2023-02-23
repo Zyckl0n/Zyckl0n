@@ -1,0 +1,24 @@
+.navbar {
+    background: var(--bg_color_2);
+    box-shadow: var(--btn_shadow_extruded);
+    padding: 5px 2%;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    left: 0;
+}
+
+.navbar_icon{
+    height:40px;
+    filter: invert(0.5);
+}
+.navbar_icon:hover{
+    cursor: pointer;
+    filter:var(--main_color_filter)
+}
+#current_rendered_app_title{
+    transition: opacity .1s ease-in-out;
+}
+#current_rendered_app_title.faded{
+    opacity: 0;
+}

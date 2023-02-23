@@ -1,0 +1,9 @@
+<svg width="35" height="200" xmlns="http://www.w3.org/2000/svg">
+<linearGradient id="Gradient" x1="1" x2="0" y1="0" y2="0">
+    <stop offset="0%" stop-color="#00FF00"/>
+    <stop offset="100%" stop-color="#00000000"/>
+</linearGradient>
+
+  <path fill="#252525" d="M0 0 L35 25 L35 175 L0 200 Z" />
+  <path fill="url(#Gradient)" d="M0 0 L35 25 L35 175 L0 200 L32 175 L32 25 Z" />
+</svg>

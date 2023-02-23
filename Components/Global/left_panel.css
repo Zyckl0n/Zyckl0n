@@ -1,0 +1,63 @@
+.left_panel {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    background: var(--bg_color_2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    transform: translateX(-100%);
+    transition: transform .4s ease-in-out;
+    z-index: 2;
+}
+.left_panel.active{
+    transform: translateX(0%);
+    box-shadow: rgb(0 0 0 / 80%) 0px 19px 38px, rgb(0 0 0) 0px 15px 12px;
+}
+
+.left_panel_block {
+    width: 50px;
+    height: 50px;
+    background: red;
+    margin-bottom: 20px;
+    box-shadow: var(--btn_shadow_extruded);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.left_panel_block:hover{
+    transform: scale(0.98);
+    box-shadow: var(--btn_shadow_extruded_hover);
+}
+
+.panel_grip img#background {
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    height: 120px;
+}
+
+.panel_grip img#arrow {
+    position: absolute;
+    right: -5px;
+    transform: translateX(100%);
+    height: 20px;
+    filter: invert(1);
+}
+
+.panel_grip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    position: absolute;
+    right: 0;
+}
+
+.left_panel_block img{
+    width: 100%;
+}
+

@@ -1,0 +1,47 @@
+:root{
+    --bg_color_1: #141414;
+    --bg_color_2: #252525;
+    --higlight_grey: #444444;
+    --rgb_main_color: 0, 255, 0;
+    --main_color: rgba(var(--rgb_main_color), 1);
+    --main_color_filter: invert(57%) sepia(41%) saturate(4157%) hue-rotate(83deg) brightness(119%) contrast(123%);
+    --btn_shadow_extruded: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    --btn_shadow_extruded_hover: rgba(0, 0, 0, 0.27) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.23) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.10) 0px -79px 40px 0px inset;
+}
+
+body{
+    background: var(--bg_color_1);
+    margin: 0;
+    overflow: hidden;
+}
+
+img.svg.undertitle {
+    filter: drop-shadow( 0px 2px 3px rgba(var(--rgb_main_color), .5));
+}
+
+.main_title>h4 {
+    margin: 0;
+    font-size: 50px;
+    color: var(--main_color);
+}
+
+.main_title>img.svg.undertitle {
+    width: 30%;
+    height: 10px;
+}
+
+#main_body_content>div{
+    max-height: 100vh;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_frame{
+    max-height: calc(100% - 68px);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+}

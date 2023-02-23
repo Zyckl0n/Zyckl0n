@@ -1,0 +1,71 @@
+#main_frame{
+    margin: 0% 2%;
+    width: 96%;
+    position: relative;
+    height: 100%;
+    color: white;
+}
+
+.main_frame_placeholder {
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35vh;
+}
+
+.main_frame_placeholder h3 {
+    color: var(--main_color);
+    margin: 4px;
+    font-size: 30px;
+}
+
+#main_frame_transition {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--bg_color_1);
+    z-index: 1;
+    transition: opacity .2s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#main_frame_transition.active{
+    opacity: 1;
+}
+
+.main_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circular_btn{
+    background: var(--higlight_grey);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: var(--btn_shadow_extruded);
+    transition: .1s ease-in-out;
+    min-width: 30px;
+}
+
+.circular_btn img{
+    width: 65%;
+    filter: invert(0.7);
+}
+
+.circular_btn.active img{
+    filter: var(--main_color_filter);
+}
+
+.circular_btn:hover{
+    cursor: pointer;
+    box-shadow: var(--btn_shadow_extruded_hover);
+}

@@ -1,0 +1,221 @@
+.DB_table_item_cell_header {
+    display: flex;
+    position: relative;
+    width: calc(100% - 10px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background: var(--higlight_grey);
+    padding: 5px;
+    font-size: 18px;
+    color: azure;
+    font-weight: bold;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.DB_table_item_right_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character_btn{
+    transform: scaleX(1.25) translateX(35%);
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.character_btn:hover{
+    color: var(--main_color);
+}
+
+.character_btn img{
+    width: 100%;
+    width: 100%;
+}
+
+input.DB_table_item_attribute {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    border: none;
+    background: transparent;
+    color: aliceblue;
+    font-size: inherit;
+}
+
+input.DB_table_item_attribute::placeholder {
+    opacity: 1;
+    color: azure;
+}
+
+input.DB_table_item_attribute:focus::placeholder{
+    opacity: 0.3;
+    color: azure;
+}
+
+input.DB_table_item_attribute.modified{
+    color: chocolate;
+}
+
+.DB_table_footer_btn {
+    width: 50%;
+    height: 100%;
+    background: var(--bg_color_2);
+    box-shadow: var(--btn_shadow_extruded);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DB_table_footer_btn img{
+    height: 60%;
+    filter: invert(0.7);
+}
+.DB_table_footer_btn:hover img{
+    filter: var(--main_color_filter);
+}
+.DB_table_footer_btn:hover{
+    cursor: pointer;
+    box-shadow: var(--btn_shadow_extruded_hover);
+}
+
+.DB_table_item_cell_name_loading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--higlight_grey);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s ease-in-out;
+}
+
+.DB_table_item_cell.updating .DB_table_item_cell_name_loading{
+    opacity: 1;
+    z-index: 2;
+}
+
+.DB_table_item_cell{
+    position: relative;
+}
+
+.DB_table_linked_table_item_attribute{
+    width: 100%;
+    height: 100%;
+}
+
+.DB_table_linked_table_item_attribute select{
+    width: calc(100% - 10px);
+    height: 100%;
+    margin: 0px 5px;
+}
+
+.DB_table_linked_table_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-top: 10px;
+}
+
+#DB_table_item_cell_linked {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: calc(100% - 15px);
+    border: 3px solid var(--higlight_grey);
+    overflow-y: hidden;
+    transition: .2s ease-in-out;
+}
+
+#DB_table_item_cell_linked.hide {
+    padding: 0px 5px;
+    border: 0px solid;
+    max-height: 0px;
+}
+
+.DB_table_linked_table_item_attribute{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    border: none;
+    background: transparent;
+    color: aliceblue;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+.DB_extra_row>.column_name {
+    width: 100%;
+    font-size: 24px;
+    color: var(--main_color);
+}
+
+.DB_table_item_cell_attribute {
+    border-right: 1px solid #ffffff24;
+    margin-right: 5px;
+}
+
+.DB_table_header_buttonset{
+    display: flex;
+}
+
+.DB_table_header_buttonset>*{
+    margin-left: 5px;
+}
+
+.DB_extra_row {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg_color_2);
+    box-shadow: var(--btn_shadow_extruded);
+    display: flex;
+    padding: 15px;
+    transition: .4s ease-in-out;
+    align-items: center;
+}
+
+.DB_extra_row.hidden{
+    padding: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+input.DB_table_search {
+    width: 100%;
+    background: #ffffff12;
+    margin-right: 20px;
+    height: 100%;
+    margin-top: -3px;
+    color: white;
+}
+
+.filter_hide{
+    display: none;
+}
+
+.DB_table_body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+.DB_table_body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+}
+
+.DB_table_body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.082);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    height: 10px;
+}

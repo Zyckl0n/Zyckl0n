@@ -1,0 +1,101 @@
+.calendar {
+    height: 100%;
+}
+
+.calendar_body {
+    height: calc(100% - 30px);
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.calendar_footer {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendar_footer_left, .calendar_footer_right{
+    width: 200px;
+    height: 100%;
+    position: relative;
+}
+
+.calendar_footer_center{
+    width: 300px;
+    height: 30px;
+}
+
+.calendar_body {
+    display: flex;
+    overflow: hidden;
+}
+
+.food_day {
+    width: 100%;
+    background: var(--bg_color_2);
+    box-shadow: var(--btn_shadow_extruded);
+}
+
+.food_day_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main_color);
+    flex-direction: column;
+    padding: 10px 0px;
+    background: var(--bg_color_2);
+    box-shadow: var(--btn_shadow_extruded);
+}
+
+.food_day_title {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.food_day_date {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.shopping_list_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+}
+
+.food_day_cell {
+    margin: 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background: #272727;
+    margin-top: 25px;
+}
+
+.food_cell_body{
+    padding: 20px 5px;
+}
+
+.food_cell_title{
+    padding: 5px;
+    font-size: 18px;
+    color: azure;
+    width: 96%;
+    border-bottom: 1px solid azure;
+    display: flex;
+    justify-content: space-between;
+}
+
+.food_cell_button{
+    height:20px;width:20px;margin-left:10px;filter: invert(0.7);
+}
+
+.food_cell_button:hover{
+    cursor: pointer;
+    filter: var(--main_color_filter);
+}
+
+.food_cell_body{
+    color: azure;
+}
