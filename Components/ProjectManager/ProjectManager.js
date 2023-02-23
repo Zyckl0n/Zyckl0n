@@ -11,7 +11,7 @@ export const main_comp_class = class ProjectManager extends Component{
         html += "<div class='main_frame_placeholder'>";
             html += "<h3>Project Manager</h3>";
             html += "<h3>Work in progress</h3>";
-            html += "<img style='height:50px' src='/Images/cog.gif' />"
+            html += "<img style='height:50px' src='/Zyckl0n/Images/cog.gif' />"
         html += "</div>";
         return html;
     }

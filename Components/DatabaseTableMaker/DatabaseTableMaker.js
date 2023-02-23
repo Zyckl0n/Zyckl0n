@@ -250,12 +250,12 @@ export class DatabaseTableMaker extends Component{
                     if(key!= "name" && key != "id" + this.table_name && key != "id"+link_to_table["junction_table"] && key != "id"+link_to_table["table_name"])
                     html+= "<div class='DB_table_linked_table_item_attribute'>"+"<input class='DB_table_item_attribute' id_attribute=\""+key+"\" oninput='"+this.self()+".linked_attribute_input_change(this)' value='"+element[key]+"'>"+"</div>";
                 });
-                html += "<div class='circular_btn' onclick='"+this.self()+".delete_junction_row(\""+link_to_table["junction_table"]+"\", "+id_row+", this)' > <img src='/Images/close.svg'> </div>";
+                html += "<div class='circular_btn' onclick='"+this.self()+".delete_junction_row(\""+link_to_table["junction_table"]+"\", "+id_row+", this)' > <img src='/Zyckl0n/Images/close.svg'> </div>";
             html += "</div>";
         });
         html += "<div class='DB_table_linked_table_item'>";
-            html += "<div class='circular_btn' onclick='"+this.self()+".new_juctiontable_row(this, \""+link_to_table["junction_table"]+"\", "+item_id+")' > <img src='/Images/add.svg'> </div>";
-            html += "<div class='circular_btn' onclick='"+this.self()+".confirm_linked_attribute_edition(this, \""+link_to_table["junction_table"]+"\")'> <img src='/Images/Tick.svg'> </div>";
+            html += "<div class='circular_btn' onclick='"+this.self()+".new_juctiontable_row(this, \""+link_to_table["junction_table"]+"\", "+item_id+")' > <img src='/Zyckl0n/Images/add.svg'> </div>";
+            html += "<div class='circular_btn' onclick='"+this.self()+".confirm_linked_attribute_edition(this, \""+link_to_table["junction_table"]+"\")'> <img src='/Zyckl0n/Images/Tick.svg'> </div>";
         html += "</div>";
         body.innerHTML = html;
         this.toggle_linked_attribute_visibility(body, true);
@@ -311,7 +311,7 @@ export class DatabaseTableMaker extends Component{
             html += "</option>";
         });
         html += "</select>";
-        html += "<div onclick='"+this.self()+".confirm_new_juctiontable_row(this, \""+junction_table_name+"\", "+item_id+")' class='circular_btn'><img src='/Images/Tick.svg'></div>";
+        html += "<div onclick='"+this.self()+".confirm_new_juctiontable_row(this, \""+junction_table_name+"\", "+item_id+")' class='circular_btn'><img src='/Zyckl0n/Images/Tick.svg'></div>";
 
         // Insertion
         var div = document.createElement("div");
@@ -360,7 +360,7 @@ export class DatabaseTableMaker extends Component{
         if(this.linked_tables != null){
             placeholder_width += 30 * Object.keys(this.linked_tables).length
         }
-        html += "<div style='min-width:"+placeholder_width+"px'><div onclick='"+this.self()+".close_extra_row(this)' class='circular_btn'><img src='/Images/close.svg'></div></div></div>";
+        html += "<div style='min-width:"+placeholder_width+"px'><div onclick='"+this.self()+".close_extra_row(this)' class='circular_btn'><img src='/Zyckl0n/Images/close.svg'></div></div></div>";
         this.div.querySelector("#DB_extra_row_" + name_of_the_extra_row).innerHTML = html;
     }
 
@@ -401,7 +401,7 @@ export class DatabaseTableMaker extends Component{
         var html = "";
         var id = "id_" + (item["id" + this.table_name]);
         html += "<div id='item_"+id+"' class='DB_table_item_cell'>";
-            html += "<div class='DB_table_item_cell_name_loading'><img style='height:100%' src='/Images/cog.gif' /></div>";
+            html += "<div class='DB_table_item_cell_name_loading'><img style='height:100%' src='/Zyckl0n/Images/cog.gif' /></div>";
             html += "<div class='DB_table_item_cell_header'>";
                 Object.keys(item).forEach(key => {
                     if(key != "id"+this.table_name){
@@ -413,7 +413,7 @@ export class DatabaseTableMaker extends Component{
                     Object.keys(this.linked_tables).forEach(key => {
                         var junction_table = this.linked_tables[key];
                         html += "<div class='DB_table_item_right_icon'>";
-                            html += "<div onclick='"+this.self()+".toggle_linked_attribute(this, "+(item["id" + this.table_name])+", \""+junction_table["junction_table"]+"\")' class='circular_btn'><img src='/Images/Food/edit.png'></div>"
+                            html += "<div onclick='"+this.self()+".toggle_linked_attribute(this, "+(item["id" + this.table_name])+", \""+junction_table["junction_table"]+"\")' class='circular_btn'><img src='/Zyckl0n/Images/Food/edit.png'></div>"
                         html += "</div>";
                     });
                 }
@@ -438,9 +438,9 @@ export class DatabaseTableMaker extends Component{
         html += "<div class='DB_table_header'>";
             html += "<div class='DB_table_header_title'>"+this.title+"</div>"
             html += "<div class='DB_table_header_buttonset'>";
-                html += "<div onclick='"+this.self()+".toggle_extra_row(\"legend\")' class='circular_btn'><img src='/Images/icon_list.svg'></div>";
-                html += "<div onclick='"+this.self()+".toggle_extra_row(\"search\")' class='circular_btn'><img src='/Images/icon_search.svg'></div>";
-                html += "<div onclick='"+this.self()+".fetch_list()' class='circular_btn'><img src='/Images/refresh.png'></div>";
+                html += "<div onclick='"+this.self()+".toggle_extra_row(\"legend\")' class='circular_btn'><img src='/Zyckl0n/Images/icon_list.svg'></div>";
+                html += "<div onclick='"+this.self()+".toggle_extra_row(\"search\")' class='circular_btn'><img src='/Zyckl0n/Images/icon_search.svg'></div>";
+                html += "<div onclick='"+this.self()+".fetch_list()' class='circular_btn'><img src='/Zyckl0n/Images/refresh.png'></div>";
             html += "</div>";
             html += "<div class='DB_extra_row hidden' id='DB_extra_row_legend'></div>";
             html += "<div class='DB_extra_row hidden' id='DB_extra_row_search'></div>";
@@ -449,10 +449,10 @@ export class DatabaseTableMaker extends Component{
         html += "</div>";
         html += "<div class='DB_table_footer'>";
             html += "<div onclick='"+this.self()+".create_a_item()' class='DB_table_footer_btn'>";
-                html += "<img id='add_"+this.table_name+"_btn' src='/Images/add.svg'>"
+                html += "<img id='add_"+this.table_name+"_btn' src='/Zyckl0n/Images/add.svg'>"
             html += "</div>";
             html += "<div class='DB_table_footer_btn' onclick='"+this.self()+".confirm_edit(this)'>";
-                html += "<img id='confirm_btn' src='/Images/Tick.svg'>"
+                html += "<img id='confirm_btn' src='/Zyckl0n/Images/Tick.svg'>"
             html += "</div>";
         html += "</div>";
         return html;

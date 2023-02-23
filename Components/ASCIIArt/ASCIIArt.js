@@ -164,17 +164,17 @@ export const main_comp_class = class ASCIIArt extends Component{
         html += "<link rel='stylesheet' href='Components/ASCIIArt/ASCIIArt.css'></link>";
         html += "<div onmousedown='"+this.self()+".toggle_splited(this, event, false)' onmouseup='"+this.self()+".toggle_splited(this, event, true)' id='main_result_container' class='main_result_container text'>";
             html += "<pre id='result_ASCIIART_container'>"+this.get_default_str()+"</pre>"
-            html += "<img id='uploded_image_preview' class='uploded_image_preview' src='/Images/ASCIIArt/defaultImage.png'/>"
-            html += "<div id='preview_image_side'><img style='min-width:1429px;min-height:915px' src='/Images/ASCIIArt/defaultImage.png'/></div>"
+            html += "<img id='uploded_image_preview' class='uploded_image_preview' src='/Zyckl0n/Images/ASCIIArt/defaultImage.png'/>"
+            html += "<div id='preview_image_side'><img style='min-width:1429px;min-height:915px' src='/Zyckl0n/Images/ASCIIArt/defaultImage.png'/></div>"
             html += "<div id='handle_splited'></div>"
         html += "</div>";
         html += "<div class='main_control_window'>";
             html += "<div class='main_control_subwindow'>";
                 html += "<div>Mode d'Affichage</div>"
-                html += "<div class='circular_btn' onclick='"+this.self()+".switch_result_display_mode(\"fade\", this)'> <img src='/Images/ASCIIArt/fade_icon.svg'> </div>"
-                html += "<div class='circular_btn' onclick='"+this.self()+".switch_result_display_mode(\"splited\", this)'> <img src='/Images/ASCIIArt/splited_icon.svg'> </div>"
-                html += "<div class='circular_btn' onclick='"+this.self()+".switch_result_display_mode(\"image\", this)'> <img src='/Images/ASCIIArt/image_icon.svg'> </div>"
-                html += "<div class='circular_btn active' onclick='"+this.self()+".switch_result_display_mode(\"text\", this)'> <img src='/Images/ASCIIArt/text_icon.svg'> </div>"
+                html += "<div class='circular_btn' onclick='"+this.self()+".switch_result_display_mode(\"fade\", this)'> <img src='/Zyckl0n/Images/ASCIIArt/fade_icon.svg'> </div>"
+                html += "<div class='circular_btn' onclick='"+this.self()+".switch_result_display_mode(\"splited\", this)'> <img src='/Zyckl0n/Images/ASCIIArt/splited_icon.svg'> </div>"
+                html += "<div class='circular_btn' onclick='"+this.self()+".switch_result_display_mode(\"image\", this)'> <img src='/Zyckl0n/Images/ASCIIArt/image_icon.svg'> </div>"
+                html += "<div class='circular_btn active' onclick='"+this.self()+".switch_result_display_mode(\"text\", this)'> <img src='/Zyckl0n/Images/ASCIIArt/text_icon.svg'> </div>"
             html += "</div>";
             html += "<input oninput='"+this.self()+".launch_ASCII()' type='file' id='ASCII_image_input' />"
             html += "<div class='main_control_subwindow'>";
@@ -185,8 +185,8 @@ export const main_comp_class = class ASCIIArt extends Component{
                     html += this.render_kid(this.width_selector, "class='custom_slider'");
                 html += "</div>";
             html += "</div>";
-            html += "<div class='circular_btn' onclick='"+this.self()+".reverse_color(this)'> <img src='/Images/color_switch_icon.svg'> </div>"
-            html += "<div class='circular_btn' onclick='"+this.self()+".launch_ASCII()'> <img src='/Images/regenerate.png'> </div>"
+            html += "<div class='circular_btn' onclick='"+this.self()+".reverse_color(this)'> <img src='/Zyckl0n/Images/color_switch_icon.svg'> </div>"
+            html += "<div class='circular_btn' onclick='"+this.self()+".launch_ASCII()'> <img src='/Zyckl0n/Images/regenerate.png'> </div>"
         html += "</div>";
         return html;
     }

@@ -44,8 +44,8 @@ export class FoodCalendar extends Component{
             html += "<div class='food_cell_title'>";
                 html += "<div>"+titre+"</div>";
                 html += "<div class='food_cell_buttonset'>";
-                    html += "<img class='food_cell_button' src='/Images/Food/skip.png' />"
-                    html += "<img class='food_cell_button' src='/Images/Food/regenerate.png' />"
+                    html += "<img class='food_cell_button' src='/Zyckl0n/Images/Food/skip.png' />"
+                    html += "<img class='food_cell_button' src='/Zyckl0n/Images/Food/regenerate.png' />"
                 html+="</div>";
             html += "</div>";
             html += "<div class='food_cell_body'>"+plat["name"]+"</div>";
@@ -89,15 +89,15 @@ export class FoodCalendar extends Component{
             html += "</div>";
             html += "<div class='calendar_footer'>";
                 html += "<div onclick='"+this.self()+".change_offset(-1);' class='calendar_footer_left'>";
-                html += "<img style='width:100%;height:50px;' src='/Images/Food/UnderCalendar.svg' />"
-                html += "<img class='arrow' style='height:20px;position:absolute;right:55%;top:3px;transform:ScaleX(-1)' src='/Images/arrow.svg' />"
+                html += "<img style='width:100%;height:50px;' src='/Zyckl0n/Images/Food/UnderCalendar.svg' />"
+                html += "<img class='arrow' style='height:20px;position:absolute;right:55%;top:3px;transform:ScaleX(-1)' src='/Zyckl0n/Images/arrow.svg' />"
                 html += "</div>";
                 html += "<div class='calendar_footer_center'>";
-                    html += "<img style='width:100%;height:30px;' src='/Images/volet_bas.svg' />"
+                    html += "<img style='width:100%;height:30px;' src='/Zyckl0n/Images/volet_bas.svg' />"
                 html += "</div>";
                 html += "<div onclick='"+this.self()+".change_offset(1);' class='calendar_footer_right'>";
-                    html += "<img style='width:100%;height:50px;transform:scaleX(-1)' src='/Images/Food/UnderCalendar.svg' />"
-                    html += "<img class='arrow' style='height:20px;position:absolute;left:55%;top:3px' src='/Images/arrow.svg' />"
+                    html += "<img style='width:100%;height:50px;transform:scaleX(-1)' src='/Zyckl0n/Images/Food/UnderCalendar.svg' />"
+                    html += "<img class='arrow' style='height:20px;position:absolute;left:55%;top:3px' src='/Zyckl0n/Images/arrow.svg' />"
                 html += "</div>";
             html += "</div>";
         html += "</div>";

@@ -8,7 +8,7 @@ export const main_comp_class = class SpecialThanks extends Component{
             {
                 "name" : "Usagif",
                 "link" : "https://usagif.com/",
-                "logo" : "/Components/SpecialThanks/helper_logo/usagif_logo.svg",
+                "logo" : "/Zyckl0n/Components/SpecialThanks/helper_logo/usagif_logo.svg",
                 "reasons" : [
                     "- For all of your free to use images !",
                     "- The background of this page",
@@ -18,7 +18,7 @@ export const main_comp_class = class SpecialThanks extends Component{
             {
                 "name" : "SVG Repo",
                 "link" : "https://www.svgrepo.com/",
-                "logo" : "/Components/SpecialThanks/helper_logo/SVG_Repo_logo.svg",
+                "logo" : "/Zyckl0n/Components/SpecialThanks/helper_logo/SVG_Repo_logo.svg",
                 "reasons" : [
                     "For the icons free to use :",
                     "- All buttons on my website",
@@ -141,7 +141,7 @@ export const main_comp_class = class SpecialThanks extends Component{
     }
 
     render(){
-        var html = "<img class='main_starfall_bg' style='' src='/Images/SpecialThanks/startfall_bg.gif' />";
+        var html = "<img class='main_starfall_bg' style='' src='/Zyckl0n/Images/SpecialThanks/startfall_bg.gif' />";
         html += "<link rel='stylesheet' href='Components/SpecialThanks/SpecialThanks.css'></link>";
         html += "<div onwheel='"+this.self()+".handle_scroll(event)' id='Main_content'>";
         html += "</div>";

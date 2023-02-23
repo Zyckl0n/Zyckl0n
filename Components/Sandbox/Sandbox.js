@@ -76,8 +76,8 @@ export const main_comp_class = class Sandbox extends Component{
         html += "<link rel='stylesheet' href='Components/Sandbox/Sandbox.css'></link>";
         html += "<canvas onclick='"+this.self()+".click_canvas(event)' id='particle_canvas'></canvas>";
         html += "<div class='shape_selector'>";
-            html += "<div class='circular_btn active' onclick='"+this.self()+".select_shape(this, \"circle\")'> <img src='/Images/Sandbox/circle.svg'> </div>"
-            html += "<div class='circular_btn' onclick='"+this.self()+".select_shape(this, \"square\")'> <img src='/Images/Sandbox/square.svg'> </div>"
+            html += "<div class='circular_btn active' onclick='"+this.self()+".select_shape(this, \"circle\")'> <img src='/Zyckl0n/Images/Sandbox/circle.svg'> </div>"
+            html += "<div class='circular_btn' onclick='"+this.self()+".select_shape(this, \"square\")'> <img src='/Zyckl0n/Images/Sandbox/square.svg'> </div>"
         html += "</div>";
         return html;
     }

@@ -25,7 +25,7 @@ export class LeftPannel extends Component{
     render_block(app_name){
         var html = "";
         html += "<div class='left_panel_block' onclick='"+this.self()+".click_block(\""+app_name+"\")'>";
-            html += "<img class='left_panel_block' src='/Images/App_Logo/"+app_name+"_small.png' />"
+            html += "<img class='left_panel_block' src='/Zyckl0n/Images/App_Logo/"+app_name+"_small.png' />"
         html += "</div>";
         return html;
     }

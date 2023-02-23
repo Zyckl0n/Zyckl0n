@@ -21,7 +21,7 @@ export class MainFrame extends Component{
         // --- Loading the new module
         const starting_load_time = Date.now();
         if(!Object.keys(this.loaded_app).includes(new_app)){
-            const test = await import("/Components/"+new_app+"/"+new_app+".js");
+            const test = await import("/Zyckl0n/Components/"+new_app+"/"+new_app+".js");
             this.loaded_app[new_app] = new test.main_comp_class();
         }
         this.currently_rendered_app = new_app;
@@ -48,7 +48,7 @@ export class MainFrame extends Component{
         html += "<div class='main_frame_placeholder'>";
             html += "<h3>Home page</h3>";
             html += "<h3>Work in progress</h3>";
-            html += "<img style='height:50px' src='/Images/cog.gif' />"
+            html += "<img style='height:50px' src='/Zyckl0n/Images/cog.gif' />"
         html += "</div>";
         return html
     }

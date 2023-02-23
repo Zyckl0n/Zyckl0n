@@ -9,7 +9,7 @@ export class FoodButtonset extends Component{
 
     render_button(type){
         var html = "<div onclick='"+this.self()+".click_btn(\""+type+"\", this)' class='food_circular_button "+type+"'>";
-            html += "<img src='/Images/Food/"+type+".png' />"
+            html += "<img src='/Zyckl0n/Images/Food/"+type+".png' />"
         html += "</div>";
         return html;
     }
